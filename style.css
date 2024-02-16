@@ -1,0 +1,489 @@
+/*
+Theme Name: Cat Mom
+Theme URI: https://github.com/cynthianorman
+Author: Cynthia Norman Digital
+Author URI: https://cynthianorman.com
+Description: This site is dedicated to our sweetie Magnum
+Version: 1.0
+Text Domain: catmom
+*/
+
+html {
+    overflow-x: hidden;
+}
+
+a.nav-link {
+	text-decoration: none!important;
+}
+
+a.nav-link:focus {
+	border: solid 3px red;
+	background-color: #f0f0f0;
+}
+a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid !important;
+	text-decoration-color: #000 !important;
+}
+
+/* NAV */
+
+.skip a {
+	position: absolute;
+	left: 10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	font-size: .8em;
+	background: #fff;
+	font-weight: 500;
+	display: inline-block;
+	padding: 10px;
+}
+
+.skip a:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+.bg-main-nav {
+    background-color: #fff!important;
+}
+.logo.md {
+    margin-left: 1rem;	
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .75rem!important;
+    padding-left: .75rem!important;
+	letter-spacing: 1px!important;
+	color: #483d8b!important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	background-color: #fff;
+	border: solid 2px #483d8b;
+}
+#nav-main .menu-item:last-child .nav-link {
+    padding-right: 20px!important;
+}
+a.nav-link {
+	color: #483d8b!important;	
+}
+
+.dropdown-item.active {
+	color: #483d8b!important;
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar>.container {
+		justify-content: space-around!important;
+	}
+    .navbar-brand {
+        width: 225px!important;
+    }
+}
+
+/* LAYOUT */
+
+#content {
+    min-height: 600px;
+	padding: 0 2rem;
+}
+.site-content {
+    background-color: #fff;
+}
+.content-area {
+    background-color: #fff;
+	margin: 0 auto;
+}
+.page-title {
+	padding-top: 3rem;
+	text-align: center;
+}
+footer {
+	padding-top: 2rem;
+}
+
+.social-icons {
+	color: #000;
+}
+
+.screenshot {
+	padding-top: 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+#main {
+	width: 1000px;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+}
+#content {
+	padding: 0 6rem;
+}
+.content-area {
+	max-width:1000px;
+	margin: 0 auto;
+}
+}
+
+/* TYPOGRAPHY */
+
+body { 
+    margin:0; 
+    padding:0; 
+    -ms-word-wrap:break-word;
+    word-wrap:break-word;
+	word-break: break-all;
+    white-space: normal;
+    position:relative;
+    background: #fff;
+    color: #777777;
+    overflow-x: hidden;
+}
+
+p, li, ul {
+	font-family: 'Oxygen', sans-serif;
+}
+p {
+	font-size: 1.1em;
+	line-height: 1.8;
+	padding: .5rem 0;	
+}
+ul {
+	overflow: visible;
+}
+.uagb-toc__list li {
+	line-height: .8;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.3em;
+    color: #483d8b;
+	letter-spacing: 1.5px;
+}
+h1 {
+	font-size: 3.5em!important;
+	font-weight: 200!important;
+	margin-top: 2.5rem!important;
+}
+@media only screen and (max-width: 600px) {
+	h1 { font-size: 2.7em!important; }
+}
+h2 {
+	font-size: 1.4em!important;
+	font-weight: 400!important;
+	text-transform: uppercase;
+	margin-top: 3.3rem!important;
+}
+h3 {
+    font-size: 1.3em!important;
+	font-style: italic!important;
+	margin-top: 3.1rem!important;
+}
+h4, h5 {
+	font-size: 1.2em!important;
+	margin-top: 2.5rem!important;
+}
+h5 {
+	font-style: italic!important;
+    color: #59175A!important;
+}
+.code-snippets {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 600;
+	color: #483d8b;
+	letter-spacing: .1em;
+}
+
+
+/* PORTFOLIO */
+
+.project-graphic-image img {
+    border: solid silver 1px;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.headshot img {
+    border-radius: 100%;
+    width: 60%;
+    max-height: 350px;
+    object-fit: cover;
+	display: -webkit-box;
+	margin-left: auto;
+}
+@media only screen and (max-width: 600px) {
+	.headshot img {
+		margin: 1rem auto;
+	}
+}
+a {
+    color: #cc0000 !important;
+    font-weight: 500;
+    letter-spacing: .1em;
+	text-decoration: underline !important;
+	text-decoration-style: dotted !important;
+	text-decoration-color: #f0f0f0 !important;
+}
+a:hover {
+    color: #483d8b!important;
+}
+h4 a {
+	color: #fff;
+}
+p.skills-tools {
+    line-height: 3em;
+}
+.skills-tools {
+	margin-bottom: 3rem;
+}
+.skills-tools a {
+	background-color: #f0f0f0;
+	border-radius: 30px;
+    color: #fe9559;
+    padding: 5px 15px;
+	margin: 5px;
+    white-space: nowrap;
+}
+.skills-tools a:hover {
+    color: #483d8b;
+}
+
+.btn-light {
+	border-color: #483d8b!important;
+}
+.btn-light:hover {
+	border-color: #483d8b!important;
+}
+.btn {
+	margin: 20%/50%;
+}
+.footer-text {
+    color: #fe9559;
+	font-size: .8em;
+}
+
+/* ABOUT PAGE */
+
+.skills {
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    position: relative;
+    font-size: 1.5em;
+    height: 300px;
+    background-color: #ffbe59;
+    text-align: center;
+    color: #444;
+    padding-top: 1rem;
+    white-space: nowrap;
+}
+div.skills-left {
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    animation: moveleft 30s linear infinite;
+}
+
+@keyframes moveleft {
+    0% { transform: translate3d( 0, 0, 0); }
+    100% { transform: translate3d(-20%, 0, 0); }
+}
+
+div.tools-right {
+    position: absolute;
+    right: 0;
+    top: 11rem;
+    animation: moveright 30s linear infinite;
+}
+
+@keyframes moveright {
+    0% { transform: translate3d( 0, 0, 0); }
+    100% { transform: translate3d(20%, 0, 0); }    
+}
+.headshot {
+	padding-top: 3rem;
+}
+.education {
+    text-align: left;
+    color: #444;
+}
+
+.contracts {
+    text-align: left;
+    color: #444;
+}
+.experience {
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    position: relative;
+    font-size: 1.5em;
+    height: auto;
+    background-color: #ffbe59;
+    text-align: center;
+    color: #444;
+    padding: 1rem 1rem 3rem;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 800px) {
+	.experience {
+		background-color: #fff;
+		white-space: normal;
+		padding: 10px;
+	}
+}
+.sites {
+	width: 100%;
+	height: auto;
+	box-shadow: 2px 2px #C0C0C0;
+}
+
+.site-screenshot {
+	position: relative;
+}
+
+.site-screenshot div {
+	position: absolute;
+	top: 80%;
+	left: 10%;
+	background: black;
+	color: white;
+	margin-bottom: 5px;
+	font-family: sans-serif;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: visibility 0s, opacity 0.5s linear; 
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.site-screenshot:hover{
+	cursor: pointer;
+}
+
+.site-screenshot:hover div{
+	width: auto;
+	padding: 15px;
+	border: 5px;
+	visibility: visible;
+	opacity: 1; 
+}
+
+/* BLOG */
+
+.blog-post-title h1 {
+	margin-top: 3rem;
+}
+pre.wp-block-verse {
+    background-color: #e9ecef;
+}
+p.opening-paragraph {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.wp-post-image {
+	border: solid 1px;
+	box-shadow: 3px 3px 5px 6px #ccc;	
+}
+
+.wp-block-image img {
+    padding: 75px 0px;
+}
+
+.my-toc a {
+    color: #000 !important;
+    font-size: .8em;
+}
+
+/* WOO */
+
+.woocommerce div.product div.images img {
+	border: solid 1px;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper {
+	margin-top: 3rem;
+}
+.woocommerce div.product {
+	margin-top: 3rem;
+}
+
+#tab-description > h2 {
+	display: none;
+}
+
+.woocommerce div.product form.cart .button {
+	background-color: #483d8b;
+	border-radius: 100px
+}
+.woocommerce ul.products li.product .button {
+    border-radius: 100px;
+    background-color: #483d8b;
+}
+a.button {
+    color: #fff !important;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+	border-radius: 100px;
+    background-color: #483d8b;
+}
+a.checkout-button {
+	color:#fff !important;
+}
+.woocommerce-page .woocommerce-message {
+	display: none;
+}
+.woocommerce button.button.alt {
+	border-radius: 100px;
+    background-color: #483d8b;
+}
+
+/* Gravity Forms */
+
+.gform_wrapper.gravity-theme .gform_footer input {
+    align-self: flex-end;
+    border-radius: 100px;
+	border-color: #fff;
+    background-color: #483d8b;
+    width: 125px;
+    height: 50px;
+    color: #fff;
+}
+
+body #gform_wrapper_5 .gform_footer .gform_button, body #gform_wrapper_5 .gform_page_footer .gform_button, body #gform_wrapper_5 .gform_page_footer .gform_previous_button, body #gform_wrapper_5 .gform_page_footer .gform_next_button, body #gform_wrapper_5 .gfield#field_submit .gform-button {
+    align-self: flex-end;
+    border-radius: 100px;
+	border-color: #fff;
+    background-color: #483d8b !important;
+    width: 125px;
+    height: 50px;
+    color: #fff;
+}
+
+span.gform_description, .gform_wrapper.gravity-theme .gfield_label {
+	color: #fff;
+}
+
+#tcb_landing_page h2 {
+	color: #483d8b !important;
+    line-height: 1.1em !important;
+    padding-top: 0 !important;
+}
+
+/* My Web Audit */
+
+.mwa-heading-text.mwa-center-align {
+	color: #483d8b !important;
+}
+
+
+
+
+/**/
